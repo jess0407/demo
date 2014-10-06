@@ -15,7 +15,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr ng-repeat='person in team'>
+        <tr ng-repeat='person in team | filter:searchText'>
           <td>{{person.salesperson}}</td>
           <td>{{person.conversion | number:2}}%</td>
           <td>{{person.emails}}</td>
