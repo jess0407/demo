@@ -15,7 +15,11 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'underscore',
+    'moment',
+    'jQuery',
+    'Highcharts'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -30,4 +34,21 @@ angular
       .otherwise({
         redirectTo: '/'
       });
+  });
+
+  angular.module('underscore', [])
+  .factory('_', function() {
+    return window._;
+  });
+  angular.module('moment', [])
+    .factory('moment', function() {
+      return window.moment;
+  });
+  angular.module('jQuery', [])
+    .factory('$', function() {
+      return window.$;
+  });
+  angular.module('Highcharts', [])
+  .factory('Highcharts', function() {
+    return window.Highcharts;
   });
