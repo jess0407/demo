@@ -11,12 +11,11 @@ angular.module('demoApp')
   .controller('DrawCtrl', function ($scope, $) {
     var ctx = $('canvas')[0].getContext('2d');
     var $canvas = $('canvas'), mouseDown, lastEvent;
-    var dataUrl = $canvas.get(0).toDataURL("img/png");
-    function download() {
-        dataUrl = $canvas.get(0).toDataURL("img/png");
+    var download = function() {
+      var dataUrl = $canvas.get(0).toDataURL('img/png');
         this.href = dataUrl;
-    }
-    document.getElementById('download').addEventListener('click', download, false);
+    };
+
     var valToHex = function (val) {
         if (typeof val === 'string'){
           val = parseInt(val);
@@ -48,6 +47,7 @@ angular.module('demoApp')
       $scope.adding = false;
     };
 
+    document.getElementById('download').addEventListener('click', download, false);
     //On mouse events on the canvas
     $canvas.mousedown(function(e){
       lastEvent = e;
