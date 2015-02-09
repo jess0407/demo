@@ -5,6 +5,10 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 body {
   padding-top: 50px;
 }
+
+img {
+  max-width: 100%;
+}
 .main {
   background:#666;
 }

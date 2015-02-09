@@ -38,11 +38,10 @@
         <!--Left Sidebar-->
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li><a href="#/draw">Drawing app</a></li>
+            <li><a href="#/draw">Drawing App</a></li>
             <li><a href="#/sales">Sales Performance</a></li>
-
-           <!-- <li><a href="#">Analytics</a></li>
-            <li><a href="#">Export</a></li>-->
+            <li><a href="#/badges">My Badges</a></li>
+            <!--<li><a href="#">Export</a></li>-->
           </ul>
         </div>
         <!--Main View-->
@@ -75,15 +74,14 @@
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
-     <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/jqueryui/jquery-ui.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/highcharts/highcharts.js"></script>
     <script src="bower_components/highcharts/highcharts-more.js"></script>
     <script src="bower_components/highcharts/modules/exporting.js"></script>
-    <script src="bower_components/json3/lib/json3.js"></script>
     <script src="bower_components/moment/moment.js"></script>
     <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/json3/lib/json3.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
@@ -102,6 +100,7 @@
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/jqueryui/jquery-ui.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -110,6 +109,8 @@
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/directives/salesbubble.js"></script>
         <script src="scripts/controllers/draw.js"></script>
+        <script src="scripts/controllers/badges.js"></script>
+        <script src="scripts/services/badges.js"></script>
         <!-- endbuild -->
 </body>
 </html>

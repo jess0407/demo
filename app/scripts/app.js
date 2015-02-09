@@ -35,6 +35,10 @@ angular
         templateUrl: 'views/draw.html',
         controller: 'DrawCtrl'
       })
+      .when('/badges', {
+        templateUrl: 'views/badges.html',
+        controller: 'BadgesCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
