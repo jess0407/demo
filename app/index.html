@@ -30,11 +30,6 @@
           </button>
           <a class="navbar-brand" href="#">Dashboard</a>
         </div>
-        <div class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right">
-            <input type="text" class="form-control" ng-model="searchText" placeholder="Search...">
-          </form>
-        </div>
       </div>
     </div>
     <!--Main Container-->
@@ -43,8 +38,9 @@
         <!--Left Sidebar-->
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">Overview</a></li>
-            <li><a href="#">Reports</a></li>
+            <li><a href="#/draw">Drawing app</a></li>
+            <li><a href="#/sales">Sales Performance</a></li>
+
            <!-- <li><a href="#">Analytics</a></li>
             <li><a href="#">Export</a></li>-->
           </ul>
@@ -55,7 +51,7 @@
     </div>
 
     <div class="footer">
-     
+
     </div>
 
 
@@ -113,6 +109,7 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/directives/salesbubble.js"></script>
+        <script src="scripts/controllers/draw.js"></script>
         <!-- endbuild -->
 </body>
 </html>

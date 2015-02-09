@@ -1,0 +1,40 @@
+<a  download="mydrawing.png" id="download" class="btn btn-success pull-right">
+    download my work {{adding}}
+</a>
+<canvas	width="600" height="400"></canvas>
+<div class="controls">
+  <ul>
+    <li ng-click='pickColor()'
+        ng-repeat='c in colors'
+        style='background:{{c.color}}'
+        ng-class = '{"highlight":c.chosen}'
+        ></li>
+  </ul>
+  <button class="btn btn-info" ng-click="adding = true">New Color</button>
+  <div id="colorSelect" ng-show="adding">
+    <span id="swatch" style='background:{{hex}}'></span>
+    <div class="sliders">
+      <p>
+        <label for="red">Red</label>
+        <input ng-model="color.red"
+               ng-change="getHex()"
+               id="red" name="red" type="range"
+               min=0 max=255 value=0 >
+      </p>
+      <p>
+        <label for="green">Green</label>
+        <input ng-model="color.green"
+               ng-change="getHex()"
+               id="green" name="green" type="range" min=0 max=255 value=0>
+      </p>
+      <p>
+        <label for="blue">Blue</label>
+        <input ng-model="color.blue"
+               ng-change="getHex()"
+               id="blue" name="blue" type="range" min=0 max=255 value=0>
+      </p>
+    </div>
+    <button id="addNewColor" class="btn btn-success" ng-click="addColor()">Add Color</button>
+
+  </div>
+</div>

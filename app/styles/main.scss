@@ -5,14 +5,75 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 body {
   padding-top: 50px;
 }
+.main {
+  background:#666;
+}
+canvas {
+  background: #fff;
+  display: block;
+  margin: 50px auto 10px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  box-shadow: 0 4px 0 0 #222;
+  cursor: url(../images/cursor.png), crosshair;
+}
+.controls li.highlight {
+  border: 5px solid white;
+}
+.controls {
+  min-height: 60px;
+  margin: 0 auto;
+  width: 600px;
+  overflow: hidden;
+  #colorSelect {
+    background: #eee;
+    padding:1.5em;
+    border-radius: 5px;
+  }
+}
+.controls ul{
+  list-style:none;
+  margin: 0;
+  float: 	left;
+  padding: 10px 0 20px;
+  width: 100%;
+  text-align: center;
+    li {
+      height: 54px;
+      width: 54px;
+      border-radius: 60px;
+      cursor: pointer;
+      border: 0;
+      display: inline-block;
+      margin: 0 5px 10px;
+    }
+}
 
-/*
- * Global add-ons
- */
-
-.sub-header {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
+/* New Color Palette */
+#swatch {
+  background: black;
+  height: 54px;
+  width: 54px;
+  border-radius: 60px;
+  cursor: pointer;
+  border: 0;
+  display: inline-block;
+  margin: 1em;
+}
+.sliders p {
+  margin: 8px 0;
+  vertical-align: middle;
+}
+.sliders label {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  width: 35px;
+  font-size: 14px;
+  color: #6D574E;
+}
+.sliders input {
+  position: relative;
+  top: 2px;
 }
 
 /*
@@ -101,4 +162,3 @@ body {
   display: inline-block;
   border-radius: 50%;
 }
-
