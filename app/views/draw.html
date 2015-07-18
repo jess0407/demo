@@ -1,6 +1,6 @@
-<a  download="mydrawing.png" id="download" class="btn btn-success pull-right">
+  <md-button download="mydrawing.png" id="download" class="md-primary md-hue-1">
     download my work
-</a>
+  </md-button>
 <canvas	width="600" height="400"></canvas>
 <div class="controls">
   <ul>
@@ -10,7 +10,7 @@
         ng-class = '{"highlight":c.chosen}'
         ></li>
   </ul>
-  <button class="btn btn-info" ng-click="adding = true">New Color</button>
+  <md-button class="md-raised md-primary" ng-click="adding = true">New Color</md-button>
   <div id="colorSelect" ng-show="adding">
     <span id="swatch" style='background:{{hex}}'></span>
     <div class="sliders">
@@ -34,7 +34,7 @@
                id="blue" name="blue" type="range" min=0 max=255 value=0>
       </p>
     </div>
-    <button id="addNewColor" class="btn btn-success" ng-click="addColor()">Add Color</button>
+    <md-button id="addNewColor" class="md-raised md-primary" ng-click="addColor()">Add Color</md-button>
 
   </div>
 </div>
